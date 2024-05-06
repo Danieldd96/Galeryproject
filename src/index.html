@@ -5,10 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galery</title>
     <link rel="stylesheet" href="/src/css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
 
+    <div class="wrapper" id="menu2">
+       <div class="login" >
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" 
+                required id="user" >
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" 
+                placeholder="password" 
+                required id="pass">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            
+            <div class="remenber-forgot">
+                <label><input type="checkbox"> Remenber Me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn" onclick=Login() >Login</button>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="#" class="loginBtn">Register</a></p>
+            </div>
+        </form>
+       </div>
+    </div>
+  
+    <div class="register hidden"  id="menu">
+        <div class="wrapper">
+            <form action="">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Username" 
+                    required>
+                    <i class='bx bxs-user' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email" 
+                    required>
+                    <i class='bx bxs-user' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" 
+                    placeholder="password" 
+                    required id="password" >
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                
+                <div class="remenber-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label> 
+                </div>
+                <button type="submit" class="btn">Register</button>
+                
+                <div class="register-link">
+                    <p>Already have an account? <a href="#" id="ocultarMenu" class="registerBtn">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+    
     <script src="/src/java.js"></script>
 </body>
 </html>
