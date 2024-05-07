@@ -21,8 +21,9 @@ function Login() {
     const usu = document.getElementById('user').value;
     const pass = document.getElementById('pass').value;
     console.log(usu, pass);
-    if(usu == 'Danieluser' && pass == '123456'){
+    if(usu === 'Danieluser' && pass === '123456'){
         window.location.href = 'galeria.html'
+        alert("Inicio de sesion Exitoso")
     }
 }
 
