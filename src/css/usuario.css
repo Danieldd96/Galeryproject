@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: cadetblue;
+}
+.header{
+    text-align: center;
+    height: 300px;
+    padding: 12px;
+    background: url(/src/img/backpaisaje.gif);
+    color: #fff;
+    border: 10px solid #000;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.user-name{
+    font-size: 18px;
+    margin-top: 14px;
+    color: #fff;
+}
+.social{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background: #fff;
+}
+.social li{
+    display: inline-block;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.text{
+    background-color: rgba(41, 151, 210, 0.9);
+}
