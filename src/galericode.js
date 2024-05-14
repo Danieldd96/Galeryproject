@@ -13,10 +13,7 @@ function closeImg() {
     
 }
 
-function PlayAudio() {
-    document.getElementById("music").play();
-    
-}
+
 function userPage() {
     window.location.href = '/src/user.html'
 }
