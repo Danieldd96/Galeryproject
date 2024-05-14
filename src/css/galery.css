@@ -8,8 +8,11 @@
 .container{
     width: 100%;
     height: 100%;
-    background: cadetblue;
+    background: #221f57;
     color: #fff;
+    box-shadow: 0 0 20px blue, 0 0 10px greenyellow;
+    mix-blend-mode: hard-light;
+    
 }
 
 .container .sidenav{
@@ -17,7 +20,7 @@
     height: 100vh;
     overflow: hidden;
     position: fixed;
-    padding: 32px 16px;
+    padding: 30px 16px;
     background-color: #000;
     transition: width 0.6s;
     
@@ -104,7 +107,7 @@ label .close-btn{
 }
 
 .container label{
-    position: absolute;
+    position: fixed;
     left: 3%;
     top: 1.5%;
     font-size: 24px;
@@ -151,20 +154,23 @@ label .close-btn{
 }
 .main-content{
     position: relative;
-    margin-left: 126px;
+    margin-left: 120px;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     color: #000;
-    background-color: cadetblue;
+    background:linear-gradient(to bottom right, #201d60, #2bfff4 ,#000);
     transition: 3s ease ease-in-out;
-    
+    box-shadow: 0 0 20px blue, 0 0 10px greenyellow;
+    mix-blend-mode: hard-light;
 }
 .contenedor-slider{
     margin-top: 50px;
-    width:90vw;
     border: 4px solid #000;
     transition: 0.3s ease;
-    display: flex;
     background-color: rgba(0, 0,0,0.9);
     box-shadow: 0 0 20px blue, 0 0 10px greenyellow;
+
     
 }
 
@@ -179,12 +185,12 @@ h3{
 }
 
 .slider-izquierdo{
-    width: 70%;
+    width: 90%;
     margin: 40px auto 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-    column-gap: 30px;
-    row-gap: 100px;
+    grid-template-columns: repeat(4,minmax(20px,1fr));
+    grid-gap: 30px;
+    grid-auto-rows: 650px;
     
 }
 .slider-izquierdo img{
@@ -194,7 +200,9 @@ h3{
     overflow-clip-margin: content-box;
     overflow: clip;
     height: 200px;
+    object-fit: cover;
     box-shadow: 0 0 20px blue, 0 0 10px greenyellow;
+    
 }
 
 .slider-izquierdo img:hover{
@@ -225,6 +233,7 @@ h3{
     z-index: 90;
     
 }
+
 
 
 

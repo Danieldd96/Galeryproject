@@ -5,7 +5,9 @@
 }
 
 body{
-    background-color: cadetblue;
+    background-image: url(/src/img/2swA.gif);
+    background-repeat: no-repeat;
+    background-size: cover
 }
 .header{
     text-align: center;
